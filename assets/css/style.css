@@ -407,6 +407,7 @@ section {
   position: relative;
   text-align: center;
   background: #fff;
+
 }
 
 .facts .count-box i {
@@ -419,6 +420,7 @@ section {
   padding: 12px;
   color: #fff;
   border-radius: 50px;
+
 }
 
 .facts .count-box span {
@@ -426,6 +428,7 @@ section {
   display: block;
   font-weight: 600;
   color: #011426;
+
 }
 
 .facts .count-box p {
@@ -433,7 +436,9 @@ section {
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
+
 }
+
 
 /*--------------------------------------------------------------
 # Skills
