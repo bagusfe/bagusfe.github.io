@@ -56,8 +56,9 @@ h1, h2, h3, h4, h5, h6 {
   transition: background 0.2s ease-in-out;
 }
 
-.float-download{
+.float-about {
   position:fixed;
+  display: none;
   width:40px;
   height:40px;
   bottom:60px;
@@ -69,12 +70,20 @@ h1, h2, h3, h4, h5, h6 {
   /*box-shadow: 2px 2px 3px #999;*/
 }
 
-.float-download i {
+.float-about i {
   margin-top:7px;
   font-size: 24px;
 }
-.float-blog{
+
+.float-about:hover {
+  color: #fff;
+  background: #0678e3;
+  transition: background 0.2s ease-in-out;
+}
+
+.float-resume{
   position:fixed;
+  display: none;
   width:40px;
   height:40px;
   bottom:105px;
@@ -86,11 +95,48 @@ h1, h2, h3, h4, h5, h6 {
   /*box-shadow: 2px 2px 3px #999;*/
 }
 
-.float-blog i {
+.float-resume i {
   margin-top:7px;
   font-size: 24px;
 }
 
+.float-skills{
+  position:fixed;
+  display: none;
+  width:40px;
+  height:40px;
+  bottom:150px;
+  right:15px;
+  background-color:#0563ba;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  /*box-shadow: 2px 2px 3px #999;*/
+}
+
+.float-skills i {
+  margin-top:7px;
+  font-size: 24px;
+}
+
+.float-portfolio{
+  position:fixed;
+  display: none;
+  width:40px;
+  height:40px;
+  bottom:195px;
+  right:15px;
+  background-color:#0563ba;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  /*box-shadow: 2px 2px 3px #999;*/
+}
+
+.float-portfolio i {
+  margin-top:7px;
+  font-size: 24px;
+}
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -175,6 +221,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 100px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # Navigation Menu

@@ -57,6 +57,7 @@
     }
   });
 
+
   // Activate smooth scroll on page load with hash links in the url
   $(document).ready(function() {
     if (window.location.hash) {
@@ -124,34 +125,67 @@
     return false;
   });
 
-  // float download 
+  // float about
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('.float-download').fadeIn('slow');
+      $('.float-about').fadeIn('slow');
     } else {
-      $('.float-download').fadeOut('slow');
+      $('.float-about').fadeOut('slow');
     }
   });
 
-  $('.float-download').click(function() {
+  $('.float-about').click(function() {
     $('html, body').animate({
-      scrollTop: 0
+      scrollTop: $("#about").offset().top-1
     }, 1500, 'easeInOutExpo');
     return false;
   });
 
-  // float blog
+
+  // float resume
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-      $('.float-blog').fadeIn('slow');
+      $('.float-resume').fadeIn('slow');
     } else {
-      $('.float-blog').fadeOut('slow');
+      $('.float-resume').fadeOut('slow');
     }
   });
 
-  $('.float-blog').click(function() {
+  $('.float-resume').click(function() {
     $('html, body').animate({
-      scrollTop: 0
+      scrollTop: $("#resume").offset().top-1
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
+  // float skill
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.float-skills').fadeIn('slow');
+    } else {
+      $('.float-skills').fadeOut('slow');
+    }
+  });
+
+  $('.float-skills').click(function() {
+    $('html, body').animate({
+      scrollTop: $("#skills").offset().top-1
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
+  // float portfolio
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.float-portfolio').fadeIn('slow');
+    } else {
+      $('.float-portfolio').fadeOut('slow');
+    }
+  });
+
+  $('.float-portfolio').click(function() {
+    $('html, body').animate({
+      scrollTop: $("#portfolio").offset().top-1
     }, 1500, 'easeInOutExpo');
     return false;
   });
