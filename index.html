@@ -31,27 +31,6 @@
 </head>
 
 <body oncontextmenu="return false">
-<nav id="navbar-example2" class="navbar navbar-light bg-light">
-		  <a class="navbar-brand" href="#hero">home</a>
-		  <ul class="nav nav-pills">
-		    <li class="nav-item">
-		      <a class="nav-link" href="#about">about</a>
-		    </li>
-		    <li class="nav-item">
-		      <a class="nav-link" href="#resume">resume</a>
-		    </li>
-		    <li class="nav-item dropdown">
-		      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-		      <div class="dropdown-menu">
-		        <a class="dropdown-item" href="#one">one</a>
-		        <a class="dropdown-item" href="#two">two</a>
-		        <div role="separator" class="dropdown-divider"></div>
-		        <a class="dropdown-item" href="#three">three</a>
-		      </div>
-		    </li>
-		  </ul>
-		</nav>
-		<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
     <!-- ======= Mobile nav toggle button ======= -->
     <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
 
@@ -382,11 +361,18 @@
         <!-- End Skills Section -->
 
 
+
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio section-bg">
             <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
+            	<p>
+				  <button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+				    PORTFOLIO EXPANDS
+				  </button>
+				</p>
+				<div class="collapse" id="collapseExample">
+				  <div class="card card-body">
+				    <div class="section-title">
                     <h2>Portfolio</h2>
                     <p>Some achievement (award) and project that I've worked on.</p>
                 </div>
@@ -503,6 +489,9 @@
                     </div>
 
                 </div>
+				  </div>
+				</div>
+                
 
             </div>
         </section>
