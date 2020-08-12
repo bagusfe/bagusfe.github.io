@@ -56,6 +56,41 @@ h1, h2, h3, h4, h5, h6 {
   transition: background 0.2s ease-in-out;
 }
 
+.float-download{
+  position:fixed;
+  width:40px;
+  height:40px;
+  bottom:60px;
+  right:15px;
+  background-color:#0563bb;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  /*box-shadow: 2px 2px 3px #999;*/
+}
+
+.float-download i {
+  margin-top:7px;
+  font-size: 24px;
+}
+.float-blog{
+  position:fixed;
+  width:40px;
+  height:40px;
+  bottom:105px;
+  right:15px;
+  background-color:#0563ba;
+  color:#FFF;
+  border-radius:50px;
+  text-align:center;
+  /*box-shadow: 2px 2px 3px #999;*/
+}
+
+.float-blog i {
+  margin-top:7px;
+  font-size: 24px;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -260,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -407,7 +442,6 @@ section {
   position: relative;
   text-align: center;
   background: #fff;
-
 }
 
 .facts .count-box i {
@@ -420,7 +454,6 @@ section {
   padding: 12px;
   color: #fff;
   border-radius: 50px;
-
 }
 
 .facts .count-box span {
@@ -428,7 +461,6 @@ section {
   display: block;
   font-weight: 600;
   color: #011426;
-
 }
 
 .facts .count-box p {
@@ -436,12 +468,10 @@ section {
   margin: 0;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-
 }
 
-
 /*--------------------------------------------------------------
-# Skills
+# Akills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;

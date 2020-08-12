@@ -4,13 +4,14 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 !(function($) {
   "use strict";
 
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('fast', function() {
+      $('#preloader').delay(100).fadeOut('slow', function() {
         $(this).remove();
       });
     }
@@ -123,6 +124,38 @@
     return false;
   });
 
+  // float download 
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.float-download').fadeIn('slow');
+    } else {
+      $('.float-download').fadeOut('slow');
+    }
+  });
+
+  $('.float-download').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
+  // float blog
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.float-blog').fadeIn('slow');
+    } else {
+      $('.float-blog').fadeOut('slow');
+    }
+  });
+
+  $('.float-blog').click(function() {
+    $('html, body').animate({
+      scrollTop: 0
+    }, 1500, 'easeInOutExpo');
+    return false;
+  });
+
   // jQuery counterUp
   $('[data-toggle="counter-up"]').counterUp({
     delay: 10,
@@ -148,16 +181,17 @@
 
   // Porfolio isotope and filter
   $(window).on('load', function() {
-    var portfolioIsotope = $('.portfolio-container').isotope({
+var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item'
-    });
+    });    
 
     $('#portfolio-flters li').on('click', function() {
       $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
       portfolioIsotope.isotope({
-        filter: $(this).data('filter')
+        filter: $(this).data('filter'),
+        
       });
       aos_init();
     });
